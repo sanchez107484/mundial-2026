@@ -1,0 +1,176 @@
+{
+  "groups": {
+    "A": {
+      "name": "Grupo A",
+      "teams": [
+        {"code": "MEX", "name": "Mexico", "flag": "\ud83c\uddf2\ud83c\uddfd", "seed": 1},
+        {"code": "RSA", "name": "South Africa", "flag": "\ud83c\uddff\ud83c\udde6", "seed": 2},
+        {"code": "KOR", "name": "South Korea", "flag": "\ud83c\uddf0\ud83c\uddf7", "seed": 3},
+        {"code": "CZE", "name": "Czech Republic", "flag": "\ud83c\udde8\ud83c\uddff", "seed": 4}
+      ]
+    },
+    "B": {
+      "name": "Grupo B",
+      "teams": [
+        {"code": "CAN", "name": "Canada", "flag": "\ud83c\udde8\ud83c\udde6", "seed": 1},
+        {"code": "BIH", "name": "Bosnia & Herzegovina", "flag": "\ud83c\udde7\ud83c\udde6", "seed": 2},
+        {"code": "QAT", "name": "Qatar", "flag": "\ud83c\uddf6\ud83c\udde6", "seed": 3},
+        {"code": "SUI", "name": "Switzerland", "flag": "\ud83c\udde8\ud83c\udded", "seed": 4}
+      ]
+    },
+    "C": {
+      "name": "Grupo C",
+      "teams": [
+        {"code": "BRA", "name": "Brazil", "flag": "\ud83c\udde7\ud83c\uddf7", "seed": 1},
+        {"code": "MAR", "name": "Morocco", "flag": "\ud83c\uddf2\ud83c\udde6", "seed": 2},
+        {"code": "HAI", "name": "Haiti", "flag": "\ud83c\udded\ud83c\uddf9", "seed": 3},
+        {"code": "SCO", "name": "Scotland", "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc73\udb40\udc63\udb40\udc74\udb40\udc7f", "seed": 4}
+      ]
+    },
+    "D": {
+      "name": "Grupo D",
+      "teams": [
+        {"code": "USA", "name": "USA", "flag": "\ud83c\uddfa\ud83c\uddf8", "seed": 1},
+        {"code": "PAR", "name": "Paraguay", "flag": "\ud83c\uddf5\ud83c\uddfe", "seed": 2},
+        {"code": "AUS", "name": "Australia", "flag": "\ud83c\udde6\ud83c\uddfa", "seed": 3},
+        {"code": "TUR", "name": "Turkey", "flag": "\ud83c\uddf9\ud83c\uddf7", "seed": 4}
+      ]
+    },
+    "E": {
+      "name": "Grupo E",
+      "teams": [
+        {"code": "GER", "name": "Germany", "flag": "\ud83c\udde9\ud83c\uddea", "seed": 1},
+        {"code": "CUW", "name": "Curacao", "flag": "\ud83c\udde8\ud83c\uddfc", "seed": 2},
+        {"code": "CIV", "name": "Ivory Coast", "flag": "\ud83c\udde8\ud83c\uddee", "seed": 3},
+        {"code": "ECU", "name": "Ecuador", "flag": "\ud83c\uddea\ud83c\udde8", "seed": 4}
+      ]
+    },
+    "F": {
+      "name": "Grupo F",
+      "teams": [
+        {"code": "NED", "name": "Netherlands", "flag": "\ud83c\uddf3\ud83c\uddf1", "seed": 1},
+        {"code": "JPN", "name": "Japan", "flag": "\ud83c\uddef\ud83c\uddf5", "seed": 2},
+        {"code": "SWE", "name": "Sweden", "flag": "\ud83c\uddf8\ud83c\uddea", "seed": 3},
+        {"code": "TUN", "name": "Tunisia", "flag": "\ud83c\uddf9\ud83c\uddf3", "seed": 4}
+      ]
+    },
+    "G": {
+      "name": "Grupo G",
+      "teams": [
+        {"code": "BEL", "name": "Belgium", "flag": "\ud83c\udde7\ud83c\uddea", "seed": 1},
+        {"code": "EGY", "name": "Egypt", "flag": "\ud83c\uddea\ud83c\uddec", "seed": 2},
+        {"code": "IRN", "name": "Iran", "flag": "\ud83c\uddee\ud83c\uddf7", "seed": 3},
+        {"code": "NZL", "name": "New Zealand", "flag": "\ud83c\uddf3\ud83c\uddff", "seed": 4}
+      ]
+    },
+    "H": {
+      "name": "Grupo H",
+      "teams": [
+        {"code": "ESP", "name": "Spain", "flag": "\ud83c\uddea\ud83c\uddf8", "seed": 1},
+        {"code": "CPV", "name": "Cape Verde", "flag": "\ud83c\udde8\ud83c\uddfb", "seed": 2},
+        {"code": "KSA", "name": "Saudi Arabia", "flag": "\ud83c\uddf8\ud83c\udde6", "seed": 3},
+        {"code": "URU", "name": "Uruguay", "flag": "\ud83c\uddfa\ud83c\uddfe", "seed": 4}
+      ]
+    },
+    "I": {
+      "name": "Grupo I",
+      "teams": [
+        {"code": "FRA", "name": "France", "flag": "\ud83c\uddeb\ud83c\uddf7", "seed": 1},
+        {"code": "SEN", "name": "Senegal", "flag": "\ud83c\uddf8\ud83c\uddf3", "seed": 2},
+        {"code": "IRQ", "name": "Iraq", "flag": "\ud83c\uddee\ud83c\uddf6", "seed": 3},
+        {"code": "NOR", "name": "Norway", "flag": "\ud83c\uddf3\ud83c\uddf4", "seed": 4}
+      ]
+    },
+    "J": {
+      "name": "Grupo J",
+      "teams": [
+        {"code": "ARG", "name": "Argentina", "flag": "\ud83c\udde6\ud83c\uddf7", "seed": 1},
+        {"code": "ALG", "name": "Algeria", "flag": "\ud83c\udde9\ud83c\uddff", "seed": 2},
+        {"code": "AUT", "name": "Austria", "flag": "\ud83c\udde6\ud83c\uddf9", "seed": 3},
+        {"code": "JOR", "name": "Jordan", "flag": "\ud83c\uddef\ud83c\uddf4", "seed": 4}
+      ]
+    },
+    "K": {
+      "name": "Grupo K",
+      "teams": [
+        {"code": "POR", "name": "Portugal", "flag": "\ud83c\uddf5\ud83c\uddf9", "seed": 1},
+        {"code": "COD", "name": "DR Congo", "flag": "\ud83c\udde8\ud83c\udde9", "seed": 2},
+        {"code": "UZB", "name": "Uzbekistan", "flag": "\ud83c\uddfa\ud83c\uddff", "seed": 3},
+        {"code": "COL", "name": "Colombia", "flag": "\ud83c\udde8\ud83c\uddf4", "seed": 4}
+      ]
+    },
+    "L": {
+      "name": "Grupo L",
+      "teams": [
+        {"code": "ENG", "name": "England", "flag": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "seed": 1},
+        {"code": "CRO", "name": "Croatia", "flag": "\ud83c\udded\ud83c\uddf7", "seed": 2},
+        {"code": "GHA", "name": "Ghana", "flag": "\ud83c\uddec\ud83c\udded", "seed": 3},
+        {"code": "PAN", "name": "Panama", "flag": "\ud83c\uddf5\ud83c\udde6", "seed": 4}
+      ]
+    }
+  },
+  "knockout": {
+    "roundOf32": [
+      {"id": "R32_1", "label": "P73", "team1": "2A", "team2": "2B", "venue": "Los Angeles"},
+      {"id": "R32_2", "label": "P74", "team1": "1E", "team2": "3rd A/B/C/D/F", "venue": "Boston"},
+      {"id": "R32_3", "label": "P75", "team1": "1F", "team2": "2C", "venue": "Monterrey"},
+      {"id": "R32_4", "label": "P76", "team1": "1C", "team2": "2F", "venue": "Houston"},
+      {"id": "R32_5", "label": "P77", "team1": "1I", "team2": "3rd C/D/F/G/H", "venue": "New York"},
+      {"id": "R32_6", "label": "P78", "team1": "2E", "team2": "2I", "venue": "Dallas"},
+      {"id": "R32_7", "label": "P79", "team1": "1A", "team2": "3rd C/E/F/H/I", "venue": "Mexico City"},
+      {"id": "R32_8", "label": "P80", "team1": "1L", "team2": "3rd E/H/I/J/K", "venue": "Atlanta"},
+      {"id": "R32_9", "label": "P81", "team1": "1D", "team2": "3rd B/E/F/I/J", "venue": "San Francisco"},
+      {"id": "R32_10", "label": "P82", "team1": "1G", "team2": "3rd A/E/H/I/J", "venue": "Seattle"},
+      {"id": "R32_11", "label": "P83", "team1": "2K", "team2": "2L", "venue": "Toronto"},
+      {"id": "R32_12", "label": "P84", "team1": "1H", "team2": "2J", "venue": "Los Angeles"},
+      {"id": "R32_13", "label": "P85", "team1": "1B", "team2": "3rd E/F/G/I/J", "venue": "Vancouver"},
+      {"id": "R32_14", "label": "P86", "team1": "1J", "team2": "2H", "venue": "Miami"},
+      {"id": "R32_15", "label": "P87", "team1": "1K", "team2": "3rd D/E/I/J/L", "venue": "Kansas City"},
+      {"id": "R32_16", "label": "P88", "team1": "2D", "team2": "2G", "venue": "Dallas"}
+    ],
+    "roundOf16": [
+      {"id": "R16_1", "label": "P89", "from": ["R32_2", "R32_5"], "venue": "Philadelphia"},
+      {"id": "R16_2", "label": "P90", "from": ["R32_1", "R32_3"], "venue": "Houston"},
+      {"id": "R16_3", "label": "P91", "from": ["R32_4", "R32_6"], "venue": "New York"},
+      {"id": "R16_4", "label": "P92", "from": ["R32_7", "R32_8"], "venue": "Mexico City"},
+      {"id": "R16_5", "label": "P93", "from": ["R32_11", "R32_12"], "venue": "Dallas"},
+      {"id": "R16_6", "label": "P94", "from": ["R32_9", "R32_10"], "venue": "Seattle"},
+      {"id": "R16_7", "label": "P95", "from": ["R32_14", "R32_16"], "venue": "Atlanta"},
+      {"id": "R16_8", "label": "P96", "from": ["R32_13", "R32_15"], "venue": "Vancouver"}
+    ],
+    "quarterFinals": [
+      {"id": "QF_1", "label": "P97", "from": ["R16_1", "R16_2"], "venue": "Boston"},
+      {"id": "QF_2", "label": "P98", "from": ["R16_5", "R16_6"], "venue": "Los Angeles"},
+      {"id": "QF_3", "label": "P99", "from": ["R16_3", "R16_4"], "venue": "Miami"},
+      {"id": "QF_4", "label": "P100", "from": ["R16_7", "R16_8"], "venue": "Kansas City"}
+    ],
+    "semiFinals": [
+      {"id": "SF_1", "label": "P101", "from": ["QF_1", "QF_2"], "venue": "Dallas"},
+      {"id": "SF_2", "label": "P102", "from": ["QF_3", "QF_4"], "venue": "Atlanta"}
+    ],
+    "thirdPlace": {
+      "id": "TP", "label": "3rd/4th", "from": ["SF_1_L", "SF_2_L"], "venue": "Miami"
+    },
+    "final": {
+      "id": "FINAL", "label": "Final", "from": ["SF_1", "SF_2"], "venue": "MetLife Stadium, New York"
+    }
+  },
+  "scoring": {
+    "group_first": 2,
+    "group_second": 1,
+    "round_of_32": 3,
+    "round_of_16": 4,
+    "quarter_final": 6,
+    "semi_finalist": 10,
+    "finalist": 25,
+    "winner": 40,
+    "top_scorer_team": 5,
+    "pichichi": 20
+  },
+  "potDistribution": {
+    "first": 0.60,
+    "second": 0.25,
+    "third": 0.15
+  },
+  "entryFee": 5
+}

@@ -1,0 +1,6 @@
+data/users.json
+data/predictions.json
+data/results.json
+*.log
+.DS_Store
+Thumbs.db
