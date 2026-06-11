@@ -1,0 +1,11 @@
+.git
+.gitignore
+*.log
+.DS_Store
+Thumbs.db
+sql
+README*
+AGENTS.md
+.cursorrules
+.cursor
+.github

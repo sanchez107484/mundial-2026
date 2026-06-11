@@ -6,4 +6,10 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
+
+    RewriteRule ^data/ - [F,L]
+    RewriteRule ^config/ - [F,L]
+    RewriteRule ^includes/ - [F,L]
+    RewriteRule ^entrypoint\.sh$ - [F,L]
+    RewriteRule ^Dockerfile$ - [F,L]
 </IfModule>

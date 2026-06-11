@@ -8,17 +8,28 @@ $ranking = getRanking();
 $currentUser = getCurrentUser();
 ?>
 <main class="page-content">
-    <h1 class="page-title">Ranking</h1>
+    <div class="page-header">
+        <h1 class="page-title">RANKING</h1>
+    </div>
 
-    <div class="ranking-pot-bar">
-        <div class="pot-info">
-            <span class="pot-label">Bote total</span>
-            <span class="pot-value"><?= $ranking['pot'] ?>&euro;</span>
+    <div class="ranking-header">
+        <div class="ranking-pot-info">
+            <span class="ranking-pot-label">BOTE TOTAL</span>
+            <span class="ranking-pot-value"><?= $ranking['pot'] ?>€</span>
         </div>
-        <div class="pot-split">
-            <span class="split-item">&#129351; 60%</span>
-            <span class="split-item">&#129352; 25%</span>
-            <span class="split-item">&#129353; 15%</span>
+        <div class="ranking-splits">
+            <div class="split-item">
+                <span class="split-medal">🥇</span>
+                <span class="split-pct">60%</span>
+            </div>
+            <div class="split-item">
+                <span class="split-medal">🥈</span>
+                <span class="split-pct">25%</span>
+            </div>
+            <div class="split-item">
+                <span class="split-medal">🥉</span>
+                <span class="split-pct">15%</span>
+            </div>
         </div>
     </div>
 
@@ -32,12 +43,12 @@ $currentUser = getCurrentUser();
                 <span class="rank-name">
                     <?= htmlspecialchars($r['name']) ?>
                     <?php if ($r['is_admin']): ?><span class="admin-badge-sm">A</span><?php endif; ?>
-                    <?php if ($r['id'] === $currentUser['id']): ?><span class="me-badge">T&Uacute;</span><?php endif; ?>
+                    <?php if ($r['id'] === $currentUser['id']): ?><span class="me-badge">TÚ</span><?php endif; ?>
                 </span>
                 <span class="rank-score"><?= $r['score'] ?> pts</span>
             </div>
             <?php if ($r['prize'] > 0): ?>
-            <div class="rank-prize"><?= $r['prize'] ?>&euro;</div>
+            <div class="rank-prize"><?= $r['prize'] ?>€</div>
             <?php endif; ?>
         </div>
         <?php endforeach; ?>

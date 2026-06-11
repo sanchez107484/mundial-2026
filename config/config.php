@@ -1,7 +1,16 @@
 <?php
+$dataDir = __DIR__ . '/../data';
+$sessDir = $dataDir . '/sessions';
+if (!is_dir($sessDir)) {
+    @mkdir($sessDir, 0770, true);
+}
+if (is_dir($sessDir) && is_writable($sessDir)) {
+    ini_set('session.save_path', $sessDir);
+}
+
 session_start();
 
-define('DATA_DIR', __DIR__ . '/../data/');
+define('DATA_DIR', $dataDir . '/');
 define('TEAMS_FILE', DATA_DIR . 'teams.json');
 define('USERS_FILE', DATA_DIR . 'users.json');
 define('PREDICTIONS_FILE', DATA_DIR . 'predictions.json');

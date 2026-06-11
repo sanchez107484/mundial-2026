@@ -8,8 +8,10 @@ $teams = getTeams();
 $groups = $teams['groups'];
 ?>
 <main class="page-content">
-    <h1 class="page-title">Fase de Grupos</h1>
-    <p class="page-subtitle">12 grupos &middot; 48 equipos &middot; Clasifican 1&ordm;, 2&ordm; y los 8 mejores 3&ordm;</p>
+    <div class="page-header">
+        <h1 class="page-title">FASE DE GRUPOS</h1>
+        <p class="page-subtitle">12 grupos · 48 equipos · Clasifican 1°, 2° y los 8 mejores 3°</p>
+    </div>
 
     <div class="groups-container">
         <?php foreach ($groups as $letter => $group): ?>
@@ -23,7 +25,7 @@ $groups = $teams['groups'];
                     <tr>
                         <th>#</th>
                         <th>Equipo</th>
-                        <th></th>
+                        <th>Cod</th>
                     </tr>
                 </thead>
                 <tbody>

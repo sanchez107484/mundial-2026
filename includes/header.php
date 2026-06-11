@@ -7,7 +7,7 @@ $currentUser = getCurrentUser();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Porra del Mundial 2026</title>
+    <title>La Porra de Zoputos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@ $currentUser = getCurrentUser();
 <?php if ($currentUser): ?>
 <nav class="main-nav">
     <div class="nav-brand">
-        <span class="nav-logo">&#9917;</span>
-        <span class="nav-title">PORRA 2026</span>
+        <img src="<?= BASE_URL ?>/assets/img/icono.png" alt="Logo" class="nav-logo-img">
+        <span class="nav-title">LA PORRA DE ZOPUTOS</span>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
