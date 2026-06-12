@@ -18,7 +18,7 @@ foreach ($ranking['ranking'] as $r) {
 <main class="page-content">
     <div class="dashboard-hero">
         <div class="hero-pot">
-            <span class="pot-label">BOTE</span>
+            <img src="<?= BASE_URL ?>/assets/img/icono.png" alt="Logo" class="login-icon">
             <span class="pot-amount"><?= $ranking['pot'] ?>€</span>
             <span class="pot-players"><?= $ranking['totalUsers'] ?> jugadores · 10€ entrada</span>
         </div>
