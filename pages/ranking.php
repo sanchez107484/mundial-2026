@@ -10,6 +10,7 @@ $currentUser = getCurrentUser();
 <main class="page-content">
     <div class="page-header">
         <h1 class="page-title">RANKING</h1>
+        <img src="<?= BASE_URL ?>/assets/img/icono.png" alt="Logo" class="login-icon">
     </div>
 
     <div class="ranking-header">
