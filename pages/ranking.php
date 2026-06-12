@@ -20,15 +20,11 @@ $currentUser = getCurrentUser();
         <div class="ranking-splits">
             <div class="split-item">
                 <span class="split-medal">🥇</span>
-                <span class="split-pct">60%</span>
+                <span class="split-pct"><?= $ranking['pot']  - 10 ?>€</span>
             </div>
             <div class="split-item">
                 <span class="split-medal">🥈</span>
-                <span class="split-pct">25%</span>
-            </div>
-            <div class="split-item">
-                <span class="split-medal">🥉</span>
-                <span class="split-pct">15%</span>
+                <span class="split-pct">10€</span>
             </div>
         </div>
     </div>

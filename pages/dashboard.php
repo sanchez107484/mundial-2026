@@ -20,7 +20,7 @@ foreach ($ranking['ranking'] as $r) {
         <div class="hero-pot">
             <span class="pot-label">BOTE</span>
             <span class="pot-amount"><?= $ranking['pot'] ?>€</span>
-            <span class="pot-players"><?= $ranking['totalUsers'] ?> jugadores · 5€ entrada</span>
+            <span class="pot-players"><?= $ranking['totalUsers'] ?> jugadores · 10€ entrada</span>
         </div>
     </div>
 
@@ -68,16 +68,16 @@ foreach ($ranking['ranking'] as $r) {
     <div class="scoring-info">
         <h3>PUNTUACIÓN</h3>
         <div class="scoring-grid">
-            <div class="score-item"><span class="score-val">2</span><span class="score-lbl">1° grupo</span></div>
-            <div class="score-item"><span class="score-val">1</span><span class="score-lbl">2° grupo</span></div>
-            <div class="score-item"><span class="score-val">3</span><span class="score-lbl">Dieciseisavos</span></div>
-            <div class="score-item"><span class="score-val">4</span><span class="score-lbl">Octavos</span></div>
-            <div class="score-item"><span class="score-val">6</span><span class="score-lbl">Cuartos</span></div>
-            <div class="score-item"><span class="score-val">10</span><span class="score-lbl">Semifinal</span></div>
-            <div class="score-item score-highlight"><span class="score-val">25</span><span class="score-lbl">Finalista</span></div>
-            <div class="score-item score-highlight"><span class="score-val">40</span><span class="score-lbl">Ganador</span></div>
-            <div class="score-item"><span class="score-val">5</span><span class="score-lbl">Más goleador</span></div>
-            <div class="score-item score-highlight"><span class="score-val">20</span><span class="score-lbl">Pichichi</span></div>
+            <div class="score-item"><span class="score-val"><?= $teams['scoring']['group_first'] ?></span><span class="score-lbl">1° grupo</span></div>
+            <div class="score-item"><span class="score-val"><?= $teams['scoring']['group_second'] ?></span><span class="score-lbl">2° grupo</span></div>
+            <div class="score-item"><span class="score-val"><?= $teams['scoring']['round_of_32'] ?></span><span class="score-lbl">Dieciseisavos</span></div>
+            <div class="score-item"><span class="score-val"><?= $teams['scoring']['round_of_16'] ?></span><span class="score-lbl">Octavos</span></div>
+            <div class="score-item"><span class="score-val"><?= $teams['scoring']['quarter_final'] ?></span><span class="score-lbl">Cuartos</span></div>
+            <div class="score-item"><span class="score-val"><?= $teams['scoring']['semi_finalist'] ?></span><span class="score-lbl">Semifinal</span></div>
+            <div class="score-item score-highlight"><span class="score-val"><?= $teams['scoring']['finalist'] ?></span><span class="score-lbl">Finalista</span></div>
+            <div class="score-item score-highlight"><span class="score-val"><?= $teams['scoring']['winner'] ?></span><span class="score-lbl">Ganador</span></div>
+            <div class="score-item"><span class="score-val"><?= $teams['scoring']['top_scorer_team'] ?></span><span class="score-lbl">Más goleador</span></div>
+            <div class="score-item score-highlight"><span class="score-val"><?= $teams['scoring']['pichichi'] ?></span><span class="score-lbl">Pichichi</span></div>
         </div>
     </div>
 </main>

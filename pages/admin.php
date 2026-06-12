@@ -3,6 +3,7 @@ require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../includes/functions.php';
 requireLogin();
 requireAdmin();
+require_once __DIR__ . '/../includes/header.php';
 
 $teams = getTeams();
 $groups = $teams['groups'];
@@ -14,6 +15,17 @@ foreach ($groups as $group) {
     foreach ($group['teams'] as $t) {
         $teamLookup[$t['code']] = ['name' => $t['name'], 'flag' => $t['flag']];
     }
+}
+
+function adminResolvePos($pos, $results, $teamLookup) {
+    if (!$pos) return ['name' => '?', 'flag' => ''];
+    if (strpos($pos, '3rd') !== false) return ['name' => 'Serranillo en silla de ruedas', 'flag' => '♿'];
+    if (!preg_match('/^(\d)([A-L])$/', $pos, $m)) return ['name' => $pos, 'flag' => ''];
+    $grp = $m[2]; $place = $m[1];
+    $key = $place === '1' ? 'first' : 'second';
+    $code = $results['groups'][$grp][$key] ?? null;
+    if ($code && isset($teamLookup[$code])) return $teamLookup[$code];
+    return ['name' => $pos, 'flag' => ''];
 }
 ?>
 <main class="page-content">
@@ -71,8 +83,8 @@ foreach ($groups as $group) {
             <h3 class="subsection-title">Dieciseisavos</h3>
             <?php foreach ($teams['knockout']['roundOf32'] as $match): ?>
             <?php
-            $t1 = isset($teamLookup[$match['team1']]) ? $teamLookup[$match['team1']] : ['name' => $match['team1'], 'flag' => ''];
-            $t2 = isset($teamLookup[$match['team2']]) ? $teamLookup[$match['team2']] : ['name' => $match['team2'], 'flag' => ''];
+            $t1 = adminResolvePos($match['team1'], $results, $teamLookup);
+            $t2 = adminResolvePos($match['team2'], $results, $teamLookup);
             ?>
             <div class="pred-match">
                 <div class="pred-match-label"><?= $match['label'] ?> · <?= $match['venue'] ?></div>

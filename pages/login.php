@@ -24,7 +24,8 @@ if (isLoggedIn()) {
             <img src="<?= BASE_URL ?>/assets/img/icono.png" alt="Logo" class="login-icon">
             <h1 class="login-title">LA PORRA<br><span>DE ZOPUTOS</span></h1>
             <p class="login-subtitle">2026 · USA / MÉXICO / CANADÁ</p>
-            <div class="login-pot">5€ por persona · El bote para el que más sepa</div>
+            <div class="login-pot">10€ por persona · Ludópatas, hagan sus apuestas</div>
+            <div class="login-pot">Virin Ludopata</div>
         </div>
 
         <div class="login-form-wrapper">

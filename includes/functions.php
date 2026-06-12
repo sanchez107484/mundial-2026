@@ -107,7 +107,6 @@ function getRanking() {
     $users = getUsers();
     $teams = getTeams();
     $pot = count($users) * $teams['entryFee'];
-    $dist = $teams['potDistribution'];
     
     $ranking = [];
     foreach ($users as $user) {
@@ -127,9 +126,8 @@ function getRanking() {
     foreach ($ranking as $i => &$r) {
         $r['position'] = $i + 1;
         $r['prize'] = 0;
-        if ($i === 0) $r['prize'] = round($pot * $dist['first'], 2);
-        elseif ($i === 1) $r['prize'] = round($pot * $dist['second'], 2);
-        elseif ($i === 2) $r['prize'] = round($pot * $dist['third'], 2);
+        if ($i === 0) $r['prize'] = round($pot - $teams['entryFee'], 2);
+        elseif ($i === 1) $r['prize'] = $teams['entryFee'];
     }
     
     return [

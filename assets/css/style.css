@@ -787,7 +787,148 @@ a:hover { color: var(--gold-primary); }
 .final-match:hover { border-color: var(--gold-primary); }
 
 /* ===== PREDICTIONS ===== */
-.pred-section { display: flex; flex-direction: column; gap: 32px; }
+.pred-section { display: flex; flex-direction: column; gap: 24px; }
+
+.pred-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px 16px 80px;
+}
+
+.pred-group {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pred-group-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.02);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.pred-group-letter {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--green-primary);
+    min-width: 28px;
+}
+
+.pred-team-chip {
+    font-size: 12px;
+    color: var(--text-dim);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.pred-group-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+}
+
+.pred-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 16px;
+    background: var(--bg-card);
+}
+
+.pred-field label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.pred-select, .pred-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--font-body);
+    background: rgba(255,255,255,0.05);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-bright);
+    transition: border-color 0.2s;
+}
+
+.pred-select:focus, .pred-input:focus {
+    outline: none;
+    border-color: var(--green-primary);
+}
+
+.pred-select option {
+    background: #0e1e0e;
+    color: var(--text);
+}
+
+.pred-select.has-value { border-color: rgba(0,255,106,0.3); }
+
+.pred-match {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.pred-match-label {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.pred-match-teams {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pred-team-option {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dim);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pred-vs {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+.pred-champion {
+    font-size: 18px;
+    font-weight: 700;
+    border-color: var(--gold-primary);
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.btn-full { width: 100%; }
+.btn-lg { padding: 16px; font-size: 16px; }
 
 .section-title {
     font-family: var(--font-display);
