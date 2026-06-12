@@ -24,18 +24,18 @@ $currentUser = getCurrentUser();
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
     </button>
-    <div class="nav-menu" id="navMenu">
-        <a href="<?= BASE_URL ?>/pages/dashboard.php" class="nav-link <?= $currentPage === 'dashboard' ? 'active' : '' ?>">Inicio</a>
-        <a href="<?= BASE_URL ?>/pages/groups.php" class="nav-link <?= $currentPage === 'groups' ? 'active' : '' ?>">Grupos</a>
-        <a href="<?= BASE_URL ?>/pages/bracket.php" class="nav-link <?= $currentPage === 'bracket' ? 'active' : '' ?>">Cruces</a>
-        <a href="<?= BASE_URL ?>/pages/predictions.php" class="nav-link <?= $currentPage === 'predictions' ? 'active' : '' ?>">Mi Porra</a>
-        <a href="<?= BASE_URL ?>/pages/ranking.php" class="nav-link <?= $currentPage === 'ranking' ? 'active' : '' ?>">Ranking</a>
-        <?php if ($currentUser['is_admin']): ?>
-        <a href="<?= BASE_URL ?>/pages/admin.php" class="nav-link nav-admin <?= $currentPage === 'admin' ? 'active' : '' ?>">Admin</a>
-        <?php endif; ?>
-        <a href="#" class="nav-link nav-logout" id="logoutBtn">Salir</a>
-    </div>
 </nav>
+<div class="nav-menu" id="navMenu">
+    <a href="<?= BASE_URL ?>/pages/dashboard.php" class="nav-link <?= $currentPage === 'dashboard' ? 'active' : '' ?>">Inicio</a>
+    <a href="<?= BASE_URL ?>/pages/groups.php" class="nav-link <?= $currentPage === 'groups' ? 'active' : '' ?>">Grupos</a>
+    <a href="<?= BASE_URL ?>/pages/bracket.php" class="nav-link <?= $currentPage === 'bracket' ? 'active' : '' ?>">Cruces</a>
+    <a href="<?= BASE_URL ?>/pages/predictions.php" class="nav-link <?= $currentPage === 'predictions' ? 'active' : '' ?>">Mi Porra</a>
+    <a href="<?= BASE_URL ?>/pages/ranking.php" class="nav-link <?= $currentPage === 'ranking' ? 'active' : '' ?>">Ranking</a>
+    <?php if ($currentUser['is_admin']): ?>
+    <a href="<?= BASE_URL ?>/pages/admin.php" class="nav-link nav-admin <?= $currentPage === 'admin' ? 'active' : '' ?>">Admin</a>
+    <?php endif; ?>
+    <a href="#" class="nav-link nav-logout" id="logoutBtn">Salir</a>
+</div>
 <div class="nav-user-bar">
     <span class="user-greeting"><?= htmlspecialchars($currentUser['name']) ?></span>
     <?php if ($currentUser['is_admin']): ?>

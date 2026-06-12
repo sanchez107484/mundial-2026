@@ -123,12 +123,12 @@ a:hover { color: var(--gold-primary); }
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(5,10,5,0.99);
-    backdrop-filter: blur(20px);
+    background: var(--bg-primary);
     flex-direction: column;
     padding: 32px 24px;
     gap: 8px;
-    z-index: 99;
+    z-index: 200;
+    overflow-y: auto;
 }
 
 .nav-menu.open { display: flex; }
@@ -1232,12 +1232,19 @@ a:hover { color: var(--gold-primary); }
     .nav-toggle { display: none; }
     .nav-menu {
         display: flex;
-        position: static;
+        position: fixed;
+        top: 0;
+        left: auto;
+        right: 24px;
+        bottom: auto;
+        height: var(--nav-height);
+        align-items: center;
         flex-direction: row;
         background: none;
-        backdrop-filter: none;
         padding: 0;
         gap: 6px;
+        z-index: 101;
+        overflow: visible;
     }
     .nav-link { font-size: 13px; padding: 10px 14px; }
     .nav-link.active { border-bottom: 2px solid var(--green-primary); border-left: none; }
